@@ -19,7 +19,7 @@ client.on('message', function (topic, message) {
           client.publish("led","error "+err);
         }else{
           var str = "Guardado valor "+dato.valor+ " de "+dato.nombre;
-          client.publish("led",'sssss');
+          client.publish("led",str);
         }
       })
     }
